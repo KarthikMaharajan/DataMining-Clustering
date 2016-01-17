@@ -1,0 +1,45 @@
+								CIS 6930- INTRODUCTION TO DATA MINING
+								     README FILE FOR PROJECT 3
+
+
+In this project we use the 41984439_Part1.R, 41984439_Part2.R and 41984439_Part3.R scripts in R Studio to get the output for part1, part2 and part3 respectively.
+
+
+The following are the R packages to be installed in order to get the correct output for the functions:
+
+install.packages(“rgl”)install.packages(“fpc”)install.packages(“fields”)install.packages(“MCL”)
+install.packages(“flexclust”)
+
+
+After the running of each function use the following detach functions to remove the packages:
+
+detach("package:rgl”,unload="TRUE")detach("package:fps”,unload="TRUE")
+detach("package:fields”,unload="TRUE")detach("package:MCL”,unload="TRUE")
+detach("package:flexclust”,unload="TRUE")
+
+
+The following are the functions used in the file “41984439_Part1.R” file for implementing the clustering algorithms and the corresponding 3D plots on dataset1:
+
+* 3D plot of the given data			:   	ActualDataPlot <- function()
+* 3D plot of K-Means (Distance based)		: 	KmeansPlot <- function()
+* 3D plot of DBSCAN (Density based)		:	DBSCANplot <- function()	
+* 3D plot of K-Means (Distance based)		: 	Graphplot <- function()
+
+
+The following are the functions used in the file “41984439_Part2.R” file for implementing the clustering algorithms on dataset1:
+
+*Weighted algorithm using given weights	:	WeightedAlgorithm <- function()
+*K-means algorithm				:	KmeansAlgorithm <- function()
+
+
+The following are the functions used in the file “41984439_Part3.R” file for implementing the clustering algorithms on dataset2:
+
+*K-means algorithm				: 	kmeansdatatwo <- function()
+
+
+Here the dataset file is stored in my system and uses the path file for my system and so when running the functions please change the directory for the mydata variables at the beginning of the function so as to get the correct output. 
+
+Also when installing the package “rgl” for using the “plot3d” function, it may give some error in a MAC OSX system. This can be rectified by installing the following program and logging off and logging back into the system.
+
+http://www.xquartz.org/
+
